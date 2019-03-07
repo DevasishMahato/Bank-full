@@ -1,5 +1,5 @@
 library(caret)
-filename <- "D:/DS/bank/bank-full.csv"
+filename <- "bank-full.csv"
 
 dataset <- read.csv(filename, header=TRUE, sep = ";")
 dataframe = as.data.frame(dataset)
@@ -28,3 +28,9 @@ opt <- function(x){
 }
 
 optimized_value <- optimize(opt, interval = duration_per_campaign, tol = .Machine$double.xmin^0.5)
+
+
+
+
+
+
